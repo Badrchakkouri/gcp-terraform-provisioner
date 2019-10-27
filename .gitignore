@@ -1,0 +1,9 @@
+*.tfstate
+*.tfstate.backup
+.terraform/
+*.json
+*.pem
+*.ppk
+./gcpkeypub
+./GCP-account.json
+.idea/
