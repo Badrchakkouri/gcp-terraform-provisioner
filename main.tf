@@ -7,6 +7,7 @@ resource "google_compute_subnetwork" "gcp_sub" {
   ip_cidr_range = "10.0.0.0/20"
   name = "gcpsub"
   network = google_compute_network.gcp_net.self_link
+  region = "europe-west1"
 }
 
 resource "google_compute_address" "gcp_ip" {

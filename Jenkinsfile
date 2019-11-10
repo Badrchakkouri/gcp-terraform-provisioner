@@ -5,6 +5,7 @@ pipeline{
     stages{
         stage("Terraform init and plan"){
             steps{
+                cleanWS()
                 sh "cd ${env.WORKSPACE}"
                 sh "cp /share/gcp-kit/* ."
                 sh "sudo terraform init"
@@ -25,7 +26,7 @@ pipeline{
         stage("Terraform apply"){
             steps{
                 sh "cd ${env.WORKSPACE}"
-                sh "yes | sudo terraform apply"
+                sh "yes \"yes\" | sudo terraform apply"
                 slackSend (color: 'good', message: "Please check terraform's apply results here: ${env.jenkins_server_url}/jenkins/job/${env.JOB_NAME}/${env.BUILD_NUMBER}/console")
             }
             }
