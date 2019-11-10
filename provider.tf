@@ -8,7 +8,7 @@ provider "google" {
 
 terraform {
   backend "local" {
-    path = "/share"
+    path = "/share/terraform.tfstate"
   }
 }
 
