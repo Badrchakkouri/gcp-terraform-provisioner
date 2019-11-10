@@ -32,9 +32,10 @@ pipeline{
         
             
         }
-        
         post{
             always{
+                archiveArtifacts artifacts: '*.tfstate'
+                
                 cleanWs()
             }
         }

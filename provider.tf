@@ -6,3 +6,9 @@ provider "google" {
   region      = var.my-gcp.project
 }
 
+terraform {
+  backend "local" {
+    path = "/share"
+  }
+}
+
