@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage("Terraform init and plan"){
             steps{
-                cleanWS()
+                cleanWs()
                 sh "cd ${env.WORKSPACE}"
                 sh "cp /share/gcp-kit/* ."
                 sh "sudo terraform init"
