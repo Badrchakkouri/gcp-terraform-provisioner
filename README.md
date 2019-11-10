@@ -40,7 +40,7 @@ The code for this part is located within the instance declaration in `main.tf` a
 
 # The results
 
-When I issue `terraform apply` to build my resources in GCP, once the instance created, Terraform will ssh to it with the given connection info, copy my shell script and runn it. The commande `terraform apply` is by default verbose so everything running in the instance is printed out on the screen including the script execution.
+I issue `terraform apply` to build my resources in GCP, once the instance created, Terraform will ssh to it with the given connection info, copy my shell script and runn it. The commande `terraform apply` is by default verbose so everything running in the instance is printed out on the screen including the script execution.
 
 And voila!
 
