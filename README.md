@@ -46,5 +46,3 @@ I issue `terraform apply` to build my resources in GCP, once the instance create
 And voila!
 
 ![screenshot](Capture-GCP.PNG)
-
-
