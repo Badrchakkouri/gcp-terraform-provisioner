@@ -42,6 +42,8 @@ resource "google_compute_instance" "gcp_vm" {
     }
   }
 
+
+
   //metadata = {
   // startup_script = file("./user_data.sh")
   //}
