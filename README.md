@@ -18,6 +18,7 @@ I basically create these 4 files when building resources with terraform. This is
 # The provisioner part aka web server installation and web page customisation
 
 One of the outstanding power points of terraform and cloud providers is the possibility to manage configuration and create things automatically while spinning out compute instances. This can be made throug 2 methods: 
+
 ##### 1 - using startup scripts 
 
 This is a provided functionnality by cloud providers and Teeraform takes profit of it using cloud provider's APIs. To use this method in terraform for GCP I simply invoke the parameter `metadata_startup_script` and give it the pathe of my script `user_data.sh` as a value. I commented this parameter in my code since I'm interested in the seconde methode instead. 
