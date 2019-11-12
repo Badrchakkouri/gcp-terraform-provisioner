@@ -8,7 +8,7 @@ pipeline{
                 sh "cd ${env.WORKSPACE}"
                 sh "cp /share/gcp-kit/* ."
                 sh "sudo terraform init"
-                sh "sudo terraform destroy"
+                sh "sudo terraform plan -destroy"
                 slackSend (color: 'good', message: "Please check terraform's destroy output here: ${env.JENKINS_URL}job/terraform/job/${env.JOB_BASE_NAME}/${env.BUILD_NUMBER}/console")
             }
             }
