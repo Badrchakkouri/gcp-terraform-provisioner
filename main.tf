@@ -75,6 +75,3 @@ resource "google_compute_instance" "gcp_vm" {
 }
 
 
-
-
-
